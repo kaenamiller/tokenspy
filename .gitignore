@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+dist/
+build/
+.venv/
+.env
+.env.*
+
+# Local agent/editor metadata
+.claude/
+
+# Unrelated workspace content (Shopify theme — not part of TokenSpy)
+/assets/
+/config/
+/layout/
+/locales/
+/sections/
+/snippets/
+/templates/

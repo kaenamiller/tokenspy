@@ -1,0 +1,35 @@
+{
+  "billingCycleStart": "1776292987000",
+  "billingCycleEnd": "1778884987000",
+  "planUsage": {
+    "totalSpend": 9219,
+    "includedSpend": 2000,
+    "bonusSpend": 7219,
+    "limit": 2000,
+    "remainingBonus": false,
+    "bonusTooltip": "We work with model providers to give you free usage beyond what you've purchased. Amounts may vary.",
+    "autoPercentUsed": 61.857142857142854,
+    "apiPercentUsed": 60.53333333333333,
+    "totalPercentUsed": 61.46
+  },
+  "spendLimitUsage": {
+    "individualLimit": 10000,
+    "individualRemaining": 10000,
+    "limitType": "user"
+  },
+  "displayThreshold": 200,
+  "enabled": true,
+  "displayMessage": "You've used 17% of your included usage",
+  "autoModelSelectedDisplayMessage": "You've used 61% of your included total usage",
+  "namedModelSelectedDisplayMessage": "You've used 61% of your included API usage",
+  "autoBucketModels": [
+    "default",
+    "composer-1.5",
+    "composer-1.5-auto",
+    "composer-2",
+    "composer-2-auto",
+    "composer-2-fast",
+    "composer-1",
+    "composer-1-alpha"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "KPlugin": {
+    "Authors": [{ "Name": "Kaena", "Email": "kaena@redblindmedia.com" }],
+    "Category": "System Information",
+    "Description": "Track AI subscription usage across Claude, Codex, and Cursor",
+    "Icon": "view-statistics",
+    "Id": "com.kaena.tokenspy",
+    "Name": "TokenSpy",
+    "Version": "0.1.0",
+    "Website": "",
+    "License": "MIT"
+  },
+  "KPackageStructure": "Plasma/Applet",
+  "X-Plasma-API-Minimum-Version": "6.0"
+}

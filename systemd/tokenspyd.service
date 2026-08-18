@@ -1,0 +1,13 @@
+[Unit]
+Description=TokenSpy — AI usage poller
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/tokenspyd run
+Restart=on-failure
+RestartSec=30s
+
+[Install]
+WantedBy=default.target
