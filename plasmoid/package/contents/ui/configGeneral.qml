@@ -12,6 +12,7 @@ Kirigami.FormLayout {
     property alias cfg_hideClause:             hideClaudeCheck.checked
     property alias cfg_hideCodex:              hideCodexCheck.checked
     property alias cfg_hideCursor:             hideCursorCheck.checked
+    property alias cfg_hideOpenCodeGo:          hideOpenCodeGoCheck.checked
 
     QQC2.TextField {
         id: stateFileField
@@ -46,5 +47,10 @@ Kirigami.FormLayout {
     QQC2.CheckBox {
         id: hideCursorCheck
         text: "Hide Cursor"
+    }
+
+    QQC2.CheckBox {
+        id: hideOpenCodeGoCheck
+        text: "Hide OpenCode Go"
     }
 }

@@ -11,6 +11,7 @@ mkdir -p ~/.config/systemd/user
 cp "$REPO_DIR/systemd/tokenspyd.service" ~/.config/systemd/user/
 systemctl --user daemon-reload
 systemctl --user enable --now tokenspyd.service
+systemctl --user restart tokenspyd.service
 
 echo "==> Installing TokenSpy plasmoid…"
 kpackagetool6 --type Plasma/Applet --install "$REPO_DIR/plasmoid/package" \

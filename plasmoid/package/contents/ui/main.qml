@@ -91,5 +91,6 @@ PlasmoidItem {
         hideClaude: Plasmoid.configuration.hideClause
         hideCodex: Plasmoid.configuration.hideCodex
         hideCursor: Plasmoid.configuration.hideCursor
+        hideOpenCodeGo: Plasmoid.configuration.hideOpenCodeGo
     }
 }

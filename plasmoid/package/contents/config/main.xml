@@ -19,5 +19,8 @@
     <entry name="hideCursor" type="Bool">
       <default>false</default>
     </entry>
+    <entry name="hideOpenCodeGo" type="Bool">
+      <default>false</default>
+    </entry>
   </group>
 </kcfg>

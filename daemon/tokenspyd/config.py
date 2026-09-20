@@ -32,6 +32,12 @@ enabled = true
 # Reads accessToken from cursor-agent auth.json (~/.config/cursor/auth.json on Linux).
 # Override if your auth file lives somewhere else:
 # auth_json_path = "~/.config/cursor/auth.json"
+
+[providers.opencode_go]
+enabled = true
+# Reads the opencode-go API key from ~/.local/share/opencode/auth.json automatically.
+# Override if your auth file lives somewhere else:
+# auth_json_path = "~/.local/share/opencode/auth.json"
 """
 
 
@@ -55,12 +61,19 @@ class CursorConfig:
 
 
 @dataclass
+class OpenCodeGoConfig:
+    enabled: bool = True
+    auth_json_path: Optional[str] = None
+
+
+@dataclass
 class Config:
     poll_interval_seconds: int = 300
     log_level: str = "INFO"
     claude: ClaudeConfig = field(default_factory=ClaudeConfig)
     codex: CodexConfig = field(default_factory=CodexConfig)
     cursor: CursorConfig = field(default_factory=CursorConfig)
+    opencode_go: OpenCodeGoConfig = field(default_factory=OpenCodeGoConfig)
 
 
 def load_config(path: Path = CONFIG_PATH) -> Config:
@@ -76,6 +89,7 @@ def load_config(path: Path = CONFIG_PATH) -> Config:
     claude_raw = providers.get("claude", {})
     codex_raw = providers.get("codex", {})
     cursor_raw = providers.get("cursor", {})
+    opencode_go_raw = providers.get("opencode_go", {})
 
     return Config(
         poll_interval_seconds=general.get("poll_interval_seconds", 300),
@@ -92,5 +106,9 @@ def load_config(path: Path = CONFIG_PATH) -> Config:
         cursor=CursorConfig(
             enabled=cursor_raw.get("enabled", True),
             auth_json_path=cursor_raw.get("auth_json_path"),
+        ),
+        opencode_go=OpenCodeGoConfig(
+            enabled=opencode_go_raw.get("enabled", True),
+            auth_json_path=opencode_go_raw.get("auth_json_path"),
         ),
     )

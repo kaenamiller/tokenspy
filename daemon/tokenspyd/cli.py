@@ -15,6 +15,7 @@ def _build_adapters(config):
     from .adapters.claude import ClaudeAdapter
     from .adapters.codex import CodexAdapter
     from .adapters.cursor import CursorAdapter
+    from .adapters.opencode_go import OpenCodeGoAdapter
 
     adapters = []
     if config.claude.enabled:
@@ -23,6 +24,8 @@ def _build_adapters(config):
         adapters.append(CodexAdapter(config.codex))
     if config.cursor.enabled:
         adapters.append(CursorAdapter(config.cursor))
+    if config.opencode_go.enabled:
+        adapters.append(OpenCodeGoAdapter(config.opencode_go))
     return adapters
 
 
@@ -63,6 +66,7 @@ def cmd_doctor(args, config) -> None:
     from .adapters.claude import ClaudeAdapter
     from .adapters.codex import CodexAdapter
     from .adapters.cursor import CursorAdapter
+    from .adapters.opencode_go import OpenCodeGoAdapter
 
     _setup_logging("WARNING")
     print("tokenspyd doctor\n")
@@ -71,6 +75,7 @@ def cmd_doctor(args, config) -> None:
         ("Claude", config.claude.enabled, ClaudeAdapter(config.claude)),
         ("Codex", config.codex.enabled, CodexAdapter(config.codex)),
         ("Cursor", config.cursor.enabled, CursorAdapter(config.cursor)),
+        ("OpenCode Go", config.opencode_go.enabled, OpenCodeGoAdapter(config.opencode_go)),
     ]
 
     async def run_checks():
