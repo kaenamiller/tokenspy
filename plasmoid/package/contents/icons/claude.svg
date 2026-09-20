@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Simplified Anthropic/Claude burst: eleven irregular blades, widest at the
+     blunt outer tip. Monochrome; recoloured at runtime via Kirigami.Icon
+     isMask. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <g fill="#000" stroke="#000" stroke-width="0.22" stroke-linejoin="round">
+    <path d="M11.46,11.23 L4.61,6.40 L3.46,8.40 L11.06,11.92 Z"/>
+    <path d="M12.04,11.06 L9.23,1.88 L6.65,2.97 L11.30,11.37 Z"/>
+    <path d="M12.49,11.20 L13.96,3.36 L11.88,3.14 L11.69,11.11 Z"/>
+    <path d="M12.84,11.58 L19.06,5.08 L17.01,3.48 L12.21,11.08 Z"/>
+    <path d="M12.92,12.18 L22.64,10.84 L21.93,8.03 L12.73,11.41 Z"/>
+    <path d="M12.70,12.63 L20.64,15.90 L21.34,13.60 L12.93,11.87 Z"/>
+    <path d="M12.32,12.88 L17.62,19.11 L19.11,17.62 L12.88,12.32 Z"/>
+    <path d="M11.71,12.89 L11.90,22.29 L14.58,21.96 L12.50,12.79 Z"/>
+    <path d="M11.27,12.59 L6.73,20.11 L8.85,21.15 L11.99,12.94 Z"/>
+    <path d="M11.08,12.18 L2.67,17.02 L4.34,19.32 L11.55,12.82 Z"/>
+    <path d="M11.14,11.63 L2.87,11.22 L2.94,13.42 L11.16,12.43 Z"/>
+  </g>
+</svg>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Simplified OpenCode mark: heavy portrait frame with an inset block.
+     Geometry traced from the official icon. Monochrome; recoloured at runtime
+     via Kirigami.Icon isMask. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <path fill="#000" fill-rule="evenodd" d="
+    M6 4.5 H18 V19.5 H6 Z
+    M9 7.6 H15 V16.4 H9 Z"/>
+  <rect fill="#000" opacity="0.45" x="9" y="10.5" width="6" height="5.9"/>
+</svg>

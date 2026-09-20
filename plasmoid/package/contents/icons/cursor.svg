@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Simplified Cursor mark: isometric cube silhouette with the pointer wedge
+     cut out. Geometry traced from the official icon. Monochrome; recoloured at
+     runtime via Kirigami.Icon isMask. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <path fill="#000" fill-rule="evenodd" d="
+    M12 2.4 L20.1 7.1 L20.1 16.5 L12 21.2 L3.9 16.5 L3.9 7.1 Z
+    M5.6 8.3 L18.4 8.3 L12.4 19.9 L12.0 12.4 Z"/>
+</svg>
